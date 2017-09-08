@@ -27,8 +27,9 @@ urls = ['https://www.chegg.com/tutors/Computer-Science-online-tutoring/',
         'https://www.chegg.com/tutors/Finance-online-tutoring/']
 
 def do_fetch(url):
-    requests.get(url)
-    print('fetched %s' % url)
+    i = 10**6
+    while i > 0:
+        i -= 1 # Deliberately slow code
 
 def worker():
     while True:
