@@ -37,5 +37,5 @@ nn = [22801759111, 22801759627, 22801760147, 22801760843,
 
 
 start_time = time.time()
-print(all(map(is_prime, nn)))
+print(map(is_prime, nn))
 print(time.time() - start_time)
